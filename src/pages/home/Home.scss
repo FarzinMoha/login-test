@@ -1,0 +1,26 @@
+@import "../../App.scss";
+.home-container {
+  @include windowSize;
+  position: relative;
+  & .home-content {
+    @include childCenter;
+    @include flexStartCenter;
+    flex-direction: column;
+    padding-top: 90px;
+    height: 600px;
+    width: 60%;
+    & .home-box {
+      @include flexCenterCenter;
+      margin-top: 61px;
+      height: 150px;
+      flex-direction: column;
+      & .home-btn {
+        margin-top: 50px;
+      }
+    }
+    & .home-btn-logout{
+        margin-top: 40px;
+        align-self: flex-end;
+    }
+  }
+}

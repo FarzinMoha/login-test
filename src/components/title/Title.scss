@@ -1,0 +1,8 @@
+@import "../../App.scss";
+.page-title {
+  @include BasefontStyle;
+  color: var(--blue);
+  font-size: clamp(30px , 4vw , 50px);
+  text-align: center;
+  line-height: 43px;
+}

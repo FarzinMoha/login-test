@@ -1,0 +1,59 @@
+body {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+:root {
+  --blue: #006eff;
+  --green: #4ee0bc;
+  --placeholder: #b1b1b1;
+  --red: #e0574e;
+  --border: #E6E6E6;
+  --inputBorder: #D8D8D8;
+  --black: #000000;
+  --white: #ffffff;
+  --errorColor:#DC3545;
+}
+
+
+
+@mixin flexStartStart{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+@mixin flexStartCenter{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+@mixin flexCenterCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flexCenterStart{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+@mixin BasefontStyle{
+  letter-spacing: -0.01em; 
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+@mixin windowSize{
+  width: 100%;
+  height: calc(100vh - 88px);
+  min-height: 700px;
+}
+
+@mixin childCenter{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  z-index: 2;
+}

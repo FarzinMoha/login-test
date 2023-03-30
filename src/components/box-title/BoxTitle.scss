@@ -1,0 +1,7 @@
+@import "../../App.scss";
+.box-title {
+  @include BasefontStyle;
+  font-size: clamp(17px , 2vw , 24px);
+  color: var(--black);
+  text-align: center;
+}
