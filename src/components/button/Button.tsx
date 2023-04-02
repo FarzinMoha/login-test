@@ -3,9 +3,13 @@ import "./Button.scss";
 
 const Button: React.FC<
   React.ButtonHTMLAttributes<HTMLButtonElement> & btnProps
-> = ({ width, color, addClass,children, ...props }) => {
+> = ({ width, bgColor, addClass, children, ...props }) => {
   return (
-    <button className={`btn ${addClass}`} style={{ width: `${width}px` }} {...props}>
+    <button
+      className={`btn ${addClass}`}
+      style={{ maxWidth: `${width}px`, backgroundColor: `${bgColor}` }}
+      {...props}
+    >
       {children}
     </button>
   );

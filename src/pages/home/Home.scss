@@ -7,20 +7,25 @@
     @include flexStartCenter;
     flex-direction: column;
     padding-top: 90px;
-    height: 600px;
-    width: 60%;
+    padding-bottom: 20px;
+    height: 625px;
+    width: 65%;
+    @media screen and (max-width: 1200px) {
+      width: 70%;
+    }
+    @media screen and (max-width: 768px) {
+      width: 80%;
+    }
     & .home-box {
       @include flexCenterCenter;
-      margin-top: 61px;
-      height: 150px;
+      min-height: 150px;
       flex-direction: column;
-      & .home-btn {
-        margin-top: 50px;
+      @media screen and (max-width: 560px) {
+        width: 80%;
       }
     }
-    & .home-btn-logout{
-        margin-top: 40px;
-        align-self: flex-end;
+    & .home-btn-logout {
+      align-self: flex-end;
     }
   }
 }

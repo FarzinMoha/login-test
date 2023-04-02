@@ -1,9 +1,10 @@
 import { childProps } from '../../types/Types'
 import './Box.scss'
 
-const Box = ({children , className}:childProps) => {
+const Box = ({children , widthAuto}:childProps) => {
+  const style = widthAuto ? {width: 'fit-content' , margin:'0px 10px'} : {}
   return (
-    <div className={`box ${className}`}>
+    <div className='box' style={style}>
       {children}
     </div>
   )
